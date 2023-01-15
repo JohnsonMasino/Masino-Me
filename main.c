@@ -1,11 +1,18 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Succes)
+/*
+ * main - prints the sum of two numbers using printf.
+ * Return: Always 0 (Success).
+ * Code by Masino
  */
+
 int main(void)
 {
-	Return(0);
+	int a, b, sum;
+
+	printf("Input two numbers:\n");
+	scanf("%d %d\n", &a, &b);
+	sum = a + b;
+	printf("The sum of these numbers is: %d\n", sum);
+	return (0);
 }
