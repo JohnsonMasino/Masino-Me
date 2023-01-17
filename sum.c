@@ -1,21 +1,18 @@
 #include <stdio.h>
 
-/*
- * main - prints the sum of some numbers.
- * Return: Always 0 (Success)
- * Code by Masino
+/**
+ * main - prints the sum of two numbers.
+ * Return: Always 0 (Successs)
+ * Code by Masino.
  */
 
 int main(void)
 {
-	int alpha;
-	int num;
-	
-	alpha = "the english alphabet";
-	num = "the numeric value of alpha";
-	
-	for (alpha >= 'a'; alpha <= 'z'; alpa++)
-		printf("The letter is %d\n and the numeric value is: %d\n", alpha, num);
+	int a, b, sum;
 
+	printf("Enter two Numbers");
+	scanf("%d %d", &a, &b);
+	sum = a + b;
+	printf("The sum is: %d\n", sum);
 	return (0);
 }
