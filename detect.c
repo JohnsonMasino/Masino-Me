@@ -10,15 +10,17 @@
 int main(void)
 {
 	char alph;
-	int input;
+	int num;
 
 	printf("Enter an input here!\n");
+	scanf("%d", &num);
 	scanf("%c", &alph);
-	scanf("%d", &input);
-	if (alph >= 'a' || alph <= 'z')
-		printf("This input is an alphabet\n");
-	if (input <= 0 || input > 0)
-		printf("This input is a number\n");
+	if (num >= 0 && num < 10000)
+		printf("This input is a number within specified range\n");
+	else if (alph >= 'a' && alph <= 'z')
+		printf("This input is a lower case alphabet\n");
+	else if (alph >= 'A' && alph <= 'Z')
+		printf("This input is an upper case alphabet\n");
 	else
 		printf("Not recognised here!\n");
 	return (0);
