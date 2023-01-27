@@ -13,7 +13,7 @@ int main(void)
 	do {
 		printf("Masino here!\n");
 		i++;
-	} while (i > 0);
+	} while (i < 0);
 	printf("out of loop\n");
 	return (0);
 }
